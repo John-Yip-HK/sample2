@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<!-- Current browsers may need to add a 'muted' attribute to make video/audio autoplay happen! -->
+	<!-- Audio autoplay may work on some browsers (FireFox), but some may not! -->
+	<!-- Can do multiple autoplays at the same time. -->
+	<h1>Video</h1>
+	<video src="videos/small.webm" width="400" controls muted autoplay>
+		<!-- The text will be shown if the browser cannot play the video for some reason. -->
+		<!-- Available attributes: autoplay, loop, controls. Same for <audio>. -->
+		Your browser does not support the <code>video</code> element.
+	</video>
+	<br>
+
+	<h1>Audio</h1>
+	<audio src="https://upload.wikimedia.org/wikipedia/commons/0/04/Pyotr_Ilyich_Tchaikovsky_-_1812_overture.ogg" controls muted autoplay>
+		Pyotr Ilyich Tchaikovsky - 1812 overture
+	</audio>
+	<br>
+
+	<audio src="https://upload.wikimedia.org/wikipedia/commons/0/04/Pyotr_Ilyich_Tchaikovsky_-_1812_overture.ogg#t=15:35" controls>
+		<!-- Start the audio at 15:35 using "#t=15:35". -->
+		Pyotr Ilyich Tchaikovsky - 1812 overture, but set to start at the exciting part!
+	</audio>
+	<br>
+</body>
+</html>
